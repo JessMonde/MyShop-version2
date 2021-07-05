@@ -58,7 +58,7 @@
 						</a>
 
 						<a href="#" class="flex-c-m trans-04 p-lr-25">
-						     Contact
+						     Contacts
 						</a>
 
 						<a href="#" class="flex-c-m trans-04 p-lr-25">
@@ -83,11 +83,29 @@
 							</li>
 
 							<li class="active-menu">
-								<a href="#">Categories</a>
+								<a href="#">Hommes</a>
 								<ul class="sub-menu">
-									<li><a href="#">Hommes</a></li>
-									<li><a href="#">Femmes</a></li>
-									<li><a href="#">Enfants</a></li>
+									<li><a href="#">Cuir</a></li>
+									<li><a href="#">Basket</a></li>
+									<li><a href="#">Mocasin</a></li>
+								</ul>
+							</li>	
+							
+							<li class="active-menu">
+								<a href="#">Femmes</a>
+								<ul class="sub-menu">
+								    <li><a href="#">Cuir</a></li>
+									<li><a href="#">Basket</a></li>
+									<li><a href="#">Mocasin</a></li>
+								</ul>
+							</li>							
+
+							<li class="active-menu">
+								<a href="#">Enfants</a>
+								<ul class="sub-menu">
+								    <li><a href="#">Cuir</a></li>
+									<li><a href="#">Basket</a></li>
+									<li><a href="#">Mocasin</a></li>
 								</ul>
 							</li>							
 
@@ -123,7 +141,7 @@
 		<div class="wrap-header-mobile">
 			<!-- Logo moblie -->		
 			<div class="logo-mobile">
-				<a href="index.html"><img src="images/icons/logo-01.png" alt="IMG-LOGO"></a>
+				<a href=""><img src="images/icons/Logo.png" alt="IMG-LOGO"></a>
 			</div>
 
 			<!-- Icon header -->
@@ -155,26 +173,26 @@
 			<ul class="topbar-mobile">
 				<li>
 					<div class="left-top-bar">
-						Free shipping for standard order over $100
+						Bienvenue sur notre site
 					</div>
 				</li>
 
 				<li>
 					<div class="right-top-bar flex-w h-full">
 						<a href="#" class="flex-c-m p-lr-10 trans-04">
-							Help & FAQs
+						      FAQs
 						</a>
 
 						<a href="#" class="flex-c-m p-lr-10 trans-04">
-							My Account
+						     Utilisateur
 						</a>
 
 						<a href="#" class="flex-c-m p-lr-10 trans-04">
-							EN
+							Contacts
 						</a>
 
 						<a href="#" class="flex-c-m p-lr-10 trans-04">
-							USD
+							Qui sommes nous?
 						</a>
 					</div>
 				</li>
@@ -182,35 +200,46 @@
 
 			<ul class="main-menu-m">
 				<li>
-					<a href="index.html">Home</a>
+					<a href="">Accueil</a>
+				</li>
+
+				<li class="active-menu">
+				   <a href="">Hommes</a>
 					<ul class="sub-menu-m">
-						<li><a href="index.html">Homepage 1</a></li>
-						<li><a href="home-02.html">Homepage 2</a></li>
-						<li><a href="home-03.html">Homepage 3</a></li>
+						<li><a href="">Cuir</a></li>
+						<li><a href="">Basket</a></li>
+						<li><a href="">Mocasin</a></li>
 					</ul>
+				</li>
+
+				<li class="active-menu">
+				   <a href="">Femmes</a>
+					<ul class="sub-menu-m">
+					    <li><a href="">Cuir</a></li>
+						<li><a href="">Basket</a></li>
+						<li><a href="">Mocasin</a></li>
+					</ul>
+				</li>
+
+				<li class="active-menu">
+				 <a href="">Enfants</a>
+					<ul class="sub-menu-m">
+					    <li><a href="">Cuir</a></li>
+						<li><a href="">Basket</a></li>
+						<li><a href="">Mocasin</a></li>
+					</ul>
+				</li>
 					<span class="arrow-main-menu-m">
 						<i class="fa fa-angle-right" aria-hidden="true"></i>
 					</span>
 				</li>
 
 				<li>
-					<a href="product.html">Shop</a>
+					<a href="">Promotions</a>
 				</li>
 
 				<li>
-					<a href="shoping-cart.html" class="label1 rs1" data-label1="hot">Features</a>
-				</li>
-
-				<li>
-					<a href="blog.html">Blog</a>
-				</li>
-
-				<li>
-					<a href="about.html">About</a>
-				</li>
-
-				<li>
-					<a href="contact.html">Contact</a>
+					<a href="">Contacts</a>
 				</li>
 			</ul>
 		</div>
