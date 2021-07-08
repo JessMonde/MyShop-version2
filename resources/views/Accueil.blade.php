@@ -56,11 +56,11 @@
 							Mon Compte
 						</a>
 
-						<a href="{{route('login.index')}}" class="flex-c-m trans-04 p-lr-25">
+						<a href="{{route('Connexion.index')}}" class="flex-c-m trans-04 p-lr-25">
 							Connexions
 						</a>
 
-						<a href="{{route('login.index')}}" class="flex-c-m trans-04 p-lr-25">
+						<a href="{{route('Connexion.index')}}" class="flex-c-m trans-04 p-lr-25">
                             Deconnexion
 						</a>
 					</div>
@@ -189,11 +189,11 @@
 						   Mon Compte
 						</a>
 
-						<a href="{{route('login.index')}}" class="flex-c-m p-lr-10 trans-04">
+						<a href="{{route('Connexion.index')}}" class="flex-c-m p-lr-10 trans-04">
 							Connexion
 						</a>
 
-						<a href="{{route('login.index')}}" class="flex-c-m p-lr-10 trans-04">
+						<a href="{{route('Connexion.index')}}" class="flex-c-m p-lr-10 trans-04">
 							Deconnexion
 						</a>
 					</div>

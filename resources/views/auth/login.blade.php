@@ -82,8 +82,8 @@
                                                         </div>
                                                         <label >Mot de Passe</label>
                                                     </fieldset>
-                                                    <a href="#" class="btn btn-outline-primary float-left btn-inline">S'inscrire</a>
-                                                    <button type="submit" class="btn btn-primary float-right btn-inline">Connexion</button>
+                                                    <a href="{{route('Inscription.index')}}" class="btn btn-outline-primary float-left btn-inline">S'inscrire</a>
+                                                    <button type="submit"  href="{{route('Connexion.index')}}"  class="btn btn-primary float-right btn-inline">Connexion</button>
                                                 </form>
                                             </div>
                                         </div>

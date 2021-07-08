@@ -102,8 +102,8 @@
                                                         <label for="user-password">Mot de Passe</label>
                                                     </fieldset>
 
-                                                    <button type="submit" class="btn btn-primary float-right btn-inline">S'inscrire</button>
-                                                    <a href="#" class="btn btn-outline-primary float-left btn-inline">Mot de passe</a>
+                                                    <button type="submit"  href="{{route('Inscription.index')}}" class="btn btn-primary float-right btn-inline">S'inscrire</button>
+                                                    <a href="{{route('Connexion.index')}}" class="btn btn-outline-primary float-left btn-inline">Connexion</a>
                                                 </form>
                                             </div>
                                         </div>
