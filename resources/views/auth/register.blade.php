@@ -61,7 +61,7 @@
                                                 <h4 class="mb-0">Incription</h4>
                                             </div>
                                         </div>
-                                        <p class="px-2">Welcome back, please login to your account.</p>
+                                        <p class="px-2">Bienvenue à nouveau, veuillez vous connecter à votre compte.</p>
                                         <div class="card-content" >
                                             <div class="card-body pt-1">
                                                 <form action="#" method="post">
@@ -99,11 +99,11 @@
                                                             <div class="form-control-position">
                                                                 <i class="feather icon-lock"></i>
                                                             </div>
-                                                        <label for="user-password">Password</label>
+                                                        <label for="user-password">Mot de Passe</label>
                                                     </fieldset>
 
-                                                    <button type="submit" class="btn btn-primary float-right btn-inline">Register</button>
-                                                    <a href="#" class="btn btn-outline-primary float-left btn-inline">Login</a>
+                                                    <button type="submit" class="btn btn-primary float-right btn-inline">S'inscrire</button>
+                                                    <a href="#" class="btn btn-outline-primary float-left btn-inline">Mot de passe</a>
                                                 </form>
                                             </div>
                                         </div>

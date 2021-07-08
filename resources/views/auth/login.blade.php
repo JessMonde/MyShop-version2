@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
 
     <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="/app-assets/vendors/css/vendors.min.css">
     <!-- END: Vendor CSS-->
 
     <!-- BEGIN: Theme CSS-->
@@ -22,11 +23,19 @@
     <link rel="stylesheet" type="text/css" href="/app-assets/css/bootstrap-extended.css">
     <link rel="stylesheet" type="text/css" href="/app-assets/css/colors.css">
     <link rel="stylesheet" type="text/css" href="/app-assets/css/components.css">
+    <link rel="stylesheet" type="text/css" href="/app-assets/css/themes/dark-layout.css">
+    <link rel="stylesheet" type="text/css" href="/app-assets/css/themes/semi-dark-layout.css">
 
     <!-- BEGIN: Page CSS-->
     <link rel="stylesheet" type="text/css" href="/app-assets/css/core/menu/menu-types/horizontal-menu.css">
+    <link rel="stylesheet" type="text/css" href="/app-assets/css/core/colors/palette-gradient.css">
+    <link rel="stylesheet" type="text/css" href="/app-assets/css/pages/authentication.css">
+    <!-- END: Page CSS-->
+
+    <!-- BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
     <!-- END: Custom CSS-->
+
 
 </head>
 <!-- END: Head-->
@@ -50,10 +59,10 @@
                                     <div class="card rounded-0 mb-0 px-2">
                                         <div class="card-header pb-1">
                                             <div class="card-title">
-                                                <h4 class="mb-0">Login</h4>
+                                                <h4 class="mb-0">Connexion</h4>
                                             </div>
                                         </div>
-                                        <p class="px-2">Welcome back, please login to your account.</p>
+                                        <p class="px-2">Bienvenue à nouveau, veuillez vous connecter à votre compte.</p>
                                         <div class="card-content">
                                             <div class="card-body pt-1">
                                                 <form action="#" method="post">
@@ -71,10 +80,10 @@
                                                         <div class="form-control-position">
                                                             <i class="feather icon-lock"></i>
                                                         </div>
-                                                        <label >Password</label>
+                                                        <label >Mot de Passe</label>
                                                     </fieldset>
-                                                    <a href="#" class="btn btn-outline-primary float-left btn-inline">Register</a>
-                                                    <button type="submit" class="btn btn-primary float-right btn-inline">Login</button>
+                                                    <a href="#" class="btn btn-outline-primary float-left btn-inline">S'inscrire</a>
+                                                    <button type="submit" class="btn btn-primary float-right btn-inline">Connexion</button>
                                                 </form>
                                             </div>
                                         </div>
