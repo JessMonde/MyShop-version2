@@ -20,4 +20,5 @@ Route::get('/', function () {
 Route::resource('Connexion','loginController');
 Route::resource('Inscription','RegisterController');
 Route::resource('Accueil','AccueilController');
+Route::resource('Admin','AdminController');
 

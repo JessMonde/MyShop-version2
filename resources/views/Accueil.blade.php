@@ -89,24 +89,6 @@
 								</ul>
 							</li>
 
-                            <li class="">
-								<a href="">Femmes</a>
-								<ul class="sub-menu">
-									<li><a href="">Cuir</a></li>
-									<li><a href="">Basket</a></li>
-									<li><a href="">Mocassin</a></li>
-								</ul>
-							</li>
-
-                            <li class="">
-								<a href="">enfants</a>
-								<ul class="sub-menu">
-									<li><a href="">Cuir</a></li>
-									<li><a href="">Basket</a></li>
-									<li><a href="">Mocassin</a></li>
-								</ul>
-							</li>
-
 							<li>
 								<a href="">Promotions</a>
 							</li>
@@ -211,35 +193,7 @@
 						<li><a href="">Basket</a></li>
 						<li><a href="">Mocassin</a></li>
 					</ul>
-					<span class="arrow-main-menu-m">
-						<i class="fa fa-angle-right" aria-hidden="true"></i>
-					</span>
 				</li>
-
-                <li>
-					<a href="">Femmes</a>
-					<ul class="sub-menu-m">
-						<li><a href="">Cuir</a></li>
-						<li><a href="">Basket</a></li>
-						<li><a href="">Mocassin</a></li>
-					</ul>
-					<span class="arrow-main-menu-m">
-						<i class="fa fa-angle-right" aria-hidden="true"></i>
-					</span>
-				</li>
-
-                <li>
-					<a href="">Enfants</a>
-					<ul class="sub-menu-m">
-						<li><a href="">Cuir</a></li>
-						<li><a href="">Basket</a></li>
-						<li><a href="">Mocassin</a></li>
-					</ul>
-					<span class="arrow-main-menu-m">
-						<i class="fa fa-angle-right" aria-hidden="true"></i>
-					</span>
-				</li>
-
 				<li>
 					<a href="">A Propos</a>
 				</li>
