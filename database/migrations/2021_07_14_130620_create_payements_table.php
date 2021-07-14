@@ -15,6 +15,10 @@ class CreatePayementsTable extends Migration
     {
         Schema::create('payements', function (Blueprint $table) {
             $table->id();
+            $table->double('montant');
+            $table->integer('recu');
+            $table->unsignedBigInteger('id_lignecom');
+            $table->foreign('id_lignecom')->references('id')->on('ligne_commandes');
             $table->timestamps();
         });
     }

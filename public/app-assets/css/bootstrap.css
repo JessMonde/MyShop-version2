@@ -3192,6 +3192,7 @@ input[type="button"].btn-block {
 .card {
   position: relative;
   display: flex;
+  margin-left: 180px;
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;

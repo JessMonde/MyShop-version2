@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CategorieController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,4 +22,5 @@ Route::resource('Connexion','loginController');
 Route::resource('Inscription','RegisterController');
 Route::resource('Accueil','AccueilController');
 Route::resource('Admin','AdminController');
+Route::resource('Categories', 'CategorieController');
 

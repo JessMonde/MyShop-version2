@@ -15,6 +15,11 @@ class CreateLivraisonsTable extends Migration
     {
         Schema::create('livraisons', function (Blueprint $table) {
             $table->id();
+            $table->date('date_livraison');
+            $table->unsignedBigInteger('id_panier');
+            $table->string('adr_livraison');
+            $table->double('facturation');
+            $table->foreign('id_panier')->references('id')->on('paniers');
             $table->timestamps();
         });
     }

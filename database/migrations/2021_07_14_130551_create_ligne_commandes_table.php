@@ -15,6 +15,12 @@ class CreateLigneCommandesTable extends Migration
     {
         Schema::create('ligne_commandes', function (Blueprint $table) {
             $table->id();
+            $table->double('prix');
+            $table->integer('quantite');
+            $table->unsignedBigInteger('id_paniers');
+            $table->unsignedBigInteger('id_produits');
+            $table->foreign('id_paniers')->references('id')->on('paniers');
+            $table->foreign('id_produits')->references('id')->on('produits');
             $table->timestamps();
         });
     }

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePaniersTable extends Migration
+class CreateSousCategoriesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,11 @@ class CreatePaniersTable extends Migration
      */
     public function up()
     {
-        Schema::create('paniers', function (Blueprint $table) {
+        Schema::create('sous_categories', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('id_Users');
-            $table->double('total');
-            $table->foreign('id_Users')->references('id')->on('users');
+            $table->string('libelle');
+            $table->unsignedBigInteger('id_categories');
+            $table->foreign('id_categories')->references('id')->on('categories');
             $table->timestamps();
         });
     }
@@ -29,6 +29,6 @@ class CreatePaniersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('paniers');
+        Schema::dropIfExists('sous_categories');
     }
 }
