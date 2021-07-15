@@ -15,8 +15,19 @@ class Produits extends Model
         'quantite',
     ];
 
-    // public function categories()
-    // {
-    //     return $this->BelongsTo('App\Model\Categorie', 'id_categories'); 
-    // }
+    public function categories()
+    {
+        return $this->BelongsTo('App\Model\Categorie'); 
+    }
+    public function images(){
+        return $this->hasMany('App\Model\Images');
+    }
+    public function LigneCommandes()
+    {
+        return $this->hasMany('App\Model\Ligne_commande');
+    }
+    public function favories()
+    {
+        return $this->hasMany('App\Model\Favorie');
+    }
 }

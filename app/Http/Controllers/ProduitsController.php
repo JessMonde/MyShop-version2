@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Model\Categorie;
 use App\Model\Produits;
 use Illuminate\Http\Request;
 
@@ -14,7 +15,9 @@ class ProduitsController extends Controller
      */
     public function index()
     {
-        //
+        return view('resource.produit')
+        ->withDatas(Produits::All())
+        ->withCategories(Categorie::all());
     }
 
     /**

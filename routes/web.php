@@ -1,7 +1,7 @@
 <?php
 
-use App\Http\Controllers\CategorieController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CategorieController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,10 +17,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::resource('Connexion','loginController');
-Route::resource('Inscription','RegisterController');
+//Mes Homes//
 Route::resource('Accueil','AccueilController');
 Route::resource('Admin','AdminController');
+//Authentification//
+Route::resource('Connexion','loginController');
+Route::resource('Inscription','RegisterController');
+
+//Les vues//
 Route::resource('Categories', 'CategorieController');
+Route::resource('Produits', 'ProduitsController');
 

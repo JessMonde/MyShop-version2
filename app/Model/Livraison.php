@@ -12,4 +12,8 @@ class Livraison extends Model
         'facturation',
         'id_panier',
     ];
+    public function paniers()
+    {
+        return $this->belongsTo('App\Model\Panier');
+    }
 }

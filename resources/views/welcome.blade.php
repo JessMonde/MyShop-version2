@@ -130,7 +130,7 @@
                     <ul class="menu-content">
                         <li><a href="{{route('Categories.index')}}"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="List View">Categories</span></a>
                         </li>
-                        <li><a href="data-thumb-view.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Thumb View">Produits</span></a>
+                        <li><a href="{{route('Produits.index')}}"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Thumb View">Produits</span></a>
                         </li>
                         <li><a href="data-thumb-view.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Thumb View">Utilisateur</span></a>
                         </li>

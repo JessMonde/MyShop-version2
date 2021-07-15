@@ -11,4 +11,8 @@ class Payement extends Model
         'recu',
         'id_lignecom',
     ];
+    public function LigneCommandes()
+    {
+        return $this->belongsTo('App\Model\Ligne_commande');
+    }
 }

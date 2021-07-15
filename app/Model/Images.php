@@ -10,4 +10,8 @@ class Images extends Model
         'liens',
         'id_produits', 
     ];
+
+   public function produits(){
+       return $this->belongsTo('App\Model\Produits');
+   }
 }
