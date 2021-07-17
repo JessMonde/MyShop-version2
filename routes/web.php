@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CategorieController;
+use App\Http\Controllers\ProduitsController;
+use App\Model\Produits;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,4 +29,4 @@ Route::resource('Inscription','RegisterController');
 //Les vues//
 Route::resource('Categories', 'CategorieController');
 Route::resource('Produits', 'ProduitsController');
-
+// Route::post('Produits/{album}/upload', [ProduitsController::class,'upload']);

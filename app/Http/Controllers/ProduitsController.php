@@ -38,7 +38,16 @@ class ProduitsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'libelle' =>'required|string',
+            'images' =>'required|string', 
+            'id_categories'=>'required|string',
+            'description'=>'required|string',
+            'prix'=>'required|double|min:0',
+            'quantite'=>'required|integer|min:0',
+        ]);
+        Produits::create($request->all());
+        return redirect()->back();
     }
 
     /**
@@ -54,13 +63,17 @@ class ProduitsController extends Controller
 
     /**
      * Show the form for editing the specified resource.
-     *
+     *@param  int  $id
      * @param  \App\Model\Produits  $produits
-     * @return \Illuminate\Http\Response
+    * @return \Illuminate\Http\Response
      */
-    public function edit(Produits $produits)
+    public function edit(Produits $produits,$id)
     {
-        //
+        $editdata = Produits::FindOrFail($id);
+        return view('resource.produit')
+         ->withDatas(Produits::all())
+         ->withCategorie(Categorie::all())
+         ->with(compact(['editdata']));
     }
 
     /**
@@ -69,20 +82,31 @@ class ProduitsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\Model\Produits  $produits
      * @return \Illuminate\Http\Response
+     * @param  int  $id
      */
-    public function update(Request $request, Produits $produits)
+    public function update(Request $request, Produits $produits,$id)
     {
-        //
+        Produits::FindOrFail($id)->update($request->all());
+        return redirect()->route('Produits.index');
     }
 
     /**
      * Remove the specified resource from storage.
      *
      * @param  \App\Model\Produits  $produits
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Produits $produits)
+    public function destroy($id)
     {
-        //
+        Produits::FindOrFail($id)->delete();
+        return redirect()->route('Produits.index');
+    }
+
+    public function upload(Request $request,Produits $album)
+    {
+        if($request->has('image')){
+            dd($request->image);
+        };
     }
 }
