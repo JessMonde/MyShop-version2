@@ -39,14 +39,14 @@ class ProduitsController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'libelle' =>'required|string',
-            'images' =>'required|string', 
-            'id_categories'=>'required|string',
-            'description'=>'required|string',
-            'prix'=>'required|double|min:0',
-            'quantite'=>'required|integer|min:0',
+            'libelle' ,
+            'images', 
+            'description',
+            'prix',
+            'quantite',
         ]);
-        Produits::create($request->all());
+  
+        Produits::create($request->All());
         return redirect()->back();
     }
 

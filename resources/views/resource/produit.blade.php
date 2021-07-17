@@ -44,7 +44,7 @@
                                 <tr>
                                     <td>{{$item->images}}</td>
                                     <td>{{$item->libelle}}</td>
-                                    <td>{{$item->Cat()->first()->libelle}}</td>
+                                    {{-- <td>{{$item->categories()->first()->libelle}}</td> --}}
                                     <td>{{$item->prix}}</td>
                                     <td>{{$item->quantite}}</td>
                                     <td>{{$item->description}}</td>
@@ -76,47 +76,56 @@
                                 <i class="feather icon-x"></i>
                             </div>
                         </div>
+                        <form action="{{route('Produits.store')}}" method="POST">
+                            {{csrf_field()}}
                         <div class="data-items pb-3">
                             <div class="data-fields px-2 mt-3">
                                 <div class="row">
                                     <div class="col-sm-12 data-field-col">
                                         <label for="data-name">libelle</label>
-                                        <input type="text" class="form-control" id="data-name">
+                                        <input type="text" class="form-control" name="libelle">
                                     </div>
                                     <div class="col-sm-12 data-field-col">
                                         <label for="data-category"> Categories </label>
-                                        <select id="inputState1" class="form-control" title="produit" name="categorie_id" required="true">
+                                        <select id="inputState1" class="form-control" title="produit" name="id_categories" required="true">
                                             @foreach ($categories as $categorie)
                                                 <option value="{{ $categorie->id }}">{{ $categorie->libelle }}</option>
                                             @endforeach
                                         </select>
-                                    </div>
-                             
+                                    </div>  
                                     <div class="col-sm-12 data-field-col">
                                         <label for="data-price">Prix</label>
-                                        <input type="text" class="form-control" id="data-price">
+                                        <input type="text" class="form-control" name="prix">
                                     </div>
                                     <div class="col-sm-12 data-field-col">
-                                        <label for="data-price">Description</label>
-                                        <input type="text" class="form-control" id="data-price">
+                                            <label for="data-price">Quantite</label>
+                                            <input type="text" class="form-control" name="quantite">
                                     </div>
-                                    <div class="col-sm-12 data-field-col data-list-upload">
-                                        <form action="{{route('Produits.upload',$album->id)}}" method="POST" class="dropzone dropzone-area" id="dataListUpload">
-                                            <div class="dz-message">Ajouter Image</div>
+                                    <div class="col-sm-12 data-field-col">
+                                            <label for="data-price">Description</label>
+                                            <input type="text" class="form-control" name="description">
+                                    </div> 
+                                    {{-- <div class="col-sm-12 data-field-col data-list-upload">
+                                        <form action="#" class="dropzone dropzone-area" id="dataListUpload">
+                                            <div class="dz-message">Upload Image</div>
                                         </form>
-                                    </div>
+                                    </div> --}}
+                                    <div class="col-sm-12 data-field-col">
+                                        <label for="data-price">images</label>
+                                        <input type="text" class="form-control" name="images">
+                                </div> 
                                 </div>
                             </div>
                         </div>
                         <div class="add-data-footer d-flex justify-content-around px-3 mt-2">
+                            <div class="add-data-btn">
+                                <button class="btn btn-primary">Ajouter</button>
+                            </div>
                             <div class="cancel-data-btn">
                                 <button class="btn btn-outline-danger">Annuler</button>
                             </div>
-                            <div class="add-data-btn">
-                                <button class="btn btn-primary">Valider</button>
-                            </div>
-                          
                         </div>
+                    </form>
                     </div>
                 </div>
                 <!-- add new sidebar ends -->
