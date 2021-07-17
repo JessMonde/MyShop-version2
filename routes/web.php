@@ -30,3 +30,6 @@ Route::resource('Inscription','RegisterController');
 Route::resource('Categories', 'CategorieController');
 Route::resource('Produits', 'ProduitsController');
 // Route::post('Produits/{album}/upload', [ProduitsController::class,'upload']);
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
